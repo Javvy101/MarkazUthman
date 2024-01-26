@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markaz Uthman bin Affan | المركز عثمان بن عفان</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #000080; /* Darker Blue */
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+		
+		nav a {
+    color: #FFD100; /* Yellow */
+}
+
+        nav {
+            background-color: #000; /* Black */
+            color: #FFD100; /* Yellow */
+            padding: 1em;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav li {
+            margin: 0 10px;
+            position: relative;
+        }
+
+        nav ul ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #000; /* Black */
+        }
+		
+        nav ul li:hover > ul {
+            display: inherit;
+        }
+
+        section {
+            padding: 2em;
+        }
+
+        footer {
+            background-color: #000080; /* Darker Blue */
+            color: #fff;
+            text-align: center;
+            padding: 0.5em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-size: 14px;
+        }
+
+        /* Slideshow styles */
+        #slideshow {
+            max-width: 850px;
+            margin: 0 auto;
+            overflow: hidden;
+            position: relative;
+            margin-top: 20px;
+			margin-right: 20px;
+        }
+
+        .slides {
+            display: flex;
+            transition: transform 1s ease-in-out;
+        }
+
+        .slide {
+            min-width: 100%;
+        }
+
+        /* Prayer times table styles */
+        #prayer-times {
+            max-width: 50%;
+            margin: 0 auto;
+        }
+
+        #prayer-times table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        #prayer-times th, #prayer-times td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+        #prayer-times th {
+            background-color: #000080; /* Darker Blue */
+            color: #fff;
+        }
+
+        /* Knowledge section styles */
+        #knowledge {
+            padding: 20px;
+        }
+
+        .link-row {
+            display: flex;
+            justify-content: space-evenly;
+            margin-bottom: 10px;
+        }
+
+        #knowledge a {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+   <!-- Add this HTML code in the header section -->
+<header>
+    <!-- Add transparent palm tree image on the extreme left -->
+    <img src="PalmRev.png" alt="Left Palm Tree" style="position: absolute; top: 0; left: 0; width: 340px; height: auto;">
+
+    <h1>Markaz Uthman bin Affan | المركز عثمان بن عفان</h1>
+    
+    <!-- Add transparent palm tree image on the extreme right -->
+    <img src="MasjidLogo.png" alt="Right Palm Tree" style="position: absolute; top: 0; right: 0; width: 300px; height: auto;">
+
+    <p>Upon the 'Aqeedah and Manhaj of the Salaf-us-Salih</p>
+</header>
+
+<!-- Rest of existing code -->
+
+
+
+
+    <nav>
+        <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#knowledge">Knowledge</a></li>
+            <li><a href="#connect">Connect with us</a></li>
+            <li><a href="#Donate">Donate</a></li>
+            <li>
+                <a href="#Islam">What is Islam?</a>
+                <!-- Dropdown menu -->
+                <ul>
+                    <li><a href="#sub-section1">Who is Allah?</a></li>
+                    <li><a href="#sub-section2">What is the Sunnah?</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Slideshow -->
+    <div id="slideshow">
+        <div class="slides">
+            <div class="slide">
+                <img src="GMWS23.png" alt="Slide 1">
+            </div>
+            <div class="slide">
+                <img src="IMG2.png" alt="Slide 2">
+            </div>
+            <!-- Add more slides as needed -->
+        </div>
+    </div>
+
+   
+   <!-- Prayer times table -->
+<div id="prayer-times" style="text-align: center; margin-top: 50px;">
+    <h2 style="margin-bottom: 20px;">Prayer Times</h2>
+    <table border="1">
+        <tr>
+            <th>Prayer</th>
+            <th>Time</th>
+        </tr>
+        <tr>
+            <td>Fajr</td>
+            <td>5:30 AM</td>
+        </tr>
+        <tr>
+            <td>Dhuhr</td>
+            <td>12:30 PM</td>
+        </tr>
+        <tr>
+            <td>Asr</td>
+            <td>4:30 PM</td>
+        </tr>
+        <tr>
+            <td>Maghreb</td>
+            <td>7:00 PM</td>
+        </tr>
+        <tr>
+            <td>Isha</td>
+            <td>8:30 PM</td>
+        </tr>
+        <tr>
+            <td>Jumuah</td>
+            <td>1:30 PM</td>
+        </tr>
+    </table>
+</div>
+
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Services</h2>
+        <ul>
+            <li>Five daily prayers</li>
+            <li>Salatul Jumu'ah (Friday prayers)</li>
+            <li>Islamic classes</li>
+            <li>New Muslims/Revert assistance</li>
+            <!-- Add more services as needed -->
+        </ul>
+    </section>
+
+    
+
+<section id="events">
+    <h2>Events</h2>
+    <p>Stay tuned for upcoming events/activities at the Markaz and get the latest updates by joining our Telegram below.</p>
+    
+    <!-- Add Telegram logo image with a link to the Telegram channel -->
+    <a href="https://t.me/+hWbvH8mbM283ZTRh" target="_blank">
+        <img src="telegram_logo.png" alt="Telegram Logo" style="width: 100px; height: auto;">
+    </a>
+</section>
+
+
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>At Markaz Uthman bin Affan, we serve the Orlando metro-area in calling to Islam according to the Qur’an and the Sunnah of the Messenger صلى الله عليه وآله وسلم (may Allah raise his rank and grant him peace), upon the understanding of his pious companions. We seek to establish a vibrant community here in Central Florida equipped with an abundance of Islamic knowledge, cultivation, and connecting you with the Scholars and Students of Knowledge upon the methodology of Ahlus-Sunnah wal Jama'ah.</p>
+    </section>
+
+    <!-- Knowledge Section -->
+    <section id="knowledge">
+        <h2>Knowledge</h2>
+        <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1392142984&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+        <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+            <a href="https://soundcloud.com/germantown-masjid" title="Germantown Masjid" target="_blank" style="color: #cccccc; text-decoration: none;">Germantown Masjid</a> · <a href="https://soundcloud.com/germantown-masjid/sets/explanation-of-kitab-al-tawheed" title="Explanation of Kitab Al-Tawheed" target="_blank" style="color: #cccccc; text-decoration: none;">Explanation of Kitab Al-Tawheed</a>
+        </div>
+        <a class="spreaker-player" href="https://www.spreaker.com/show/empowering-the-oppressed" data-resource="show_id=6003523" data-theme="light" data-playlist="show" data-cover="https://d1bm3dmew779uf.cloudfront.net/cover/21e6de31e91adb05e0843855be54fdea.jpg" data-width="100%" data-height="400px">Listen to "01 Empowering the Oppressed" on Spreaker.</a>
+        <script async src="https://widget.spreaker.com/widgets.js"></script>
+        <div class="link-row">
+            <a href="https://www.Salafisounds.com">Salafi Sounds</a>
+            <a href="https://soundcloud.com/germantown-masjid/sets">Germantown Masjid</a>
+            <a href="https://www.spreaker.com/user/icpb">Islamic Center of Palm Beach</a>
+            <a href="https://www.tawhidfirst.com/monotheism/">Tawhid First</a>
+        </div>
+        <div class="link-row">
+            <a href="https://www.AboveTheThrone.Com">Above The Throne</a>
+            <a href="https://www.Asharis.Com">Asharis</a>
+            <a href="https://www.Maturidis.Com">Maturidiyyah</a>
+        </div>
+        <div class="link-row">
+            <a href="https://www.Dajjaal.Com">Ad-Dajjal, The Antichrist</a>
+            <a href="https://www.Takfiris.Com">Takfiris</a>
+            <a href="https://www.Bidah.Com">Bidah</a>
+        </div>
+    </section>
+
+    <!-- Islam Section -->
+    <section id="Islam">
+        <h2>What is Islam?</h2>
+        <p>Islam calls to true monotheism founded on the teachings of the Prophet Muhammad صلى الله عليه وآله وسلم (peace & blessings be upon him). It is based on the Quran, The Divine Speech of our creator Allah, and the Sunnah (the teachings and practices) of the Prophet صلى الله عليه وآله وسلم .</p>
+        <div id="sub-section1">
+            <h3>Who is Allah?</h3>
+            <p>Allah is the Arabic word for God, the one and only deity in Al-Islam. We as Muslims believe in the oneness of Allah. In his Lordship, In his Worship and in his Names & Attributes. Specific only to Allah alone. </p>
+        </div>
+        <div id="sub-section2">
+            <h3>What is the Sunnah?</h3>
+            <p>The Sunnah refers to the practices, actions and sayings of Prophet Muhammad صلى الله عليه وآله وسلم (peace be upon him). In every aspect it provides guidance on how to live a correct, righteous, content and fulfilling life to attain the eternal abode of Paradise. </p>
+        </div>
+    </section>
+
+    <!-- Donate Section -->
+    <section id="Donate">
+        <h2>Donate</h2>
+        <p>Click here to donate. BarakAllahu Feekum.</p>
+        <!-- Add content about donation -->
+    </section>
+
+    <!-- Connect Section -->
+    <section id="connect">
+        <h2>Connect with us</h2>
+        <p>Feel free to contact us for any inquiries or visit us at:</p>
+        <address>
+            Markaz Uthman bin Affan<br>
+            [Your Mosque Address]<br>
+            Phone: [Your Contact Number]<br>
+            Email: [Your Email Address]
+        </address>
+    </section>
+
+    <style>
+        footer {
+            background-color: #000080; /* Darker Blue */
+            color: #fff;
+            text-align: center;
+            padding: 0.5em; /* Adjust padding as needed */
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-size: 14px; /* Adjust font size as needed */
+        }
+    </style>
+
+    <footer>
+        &copy; 2023 Markaz Uthman bin Affan. All rights reserved.
+    </footer>
+
+    <script>
+        // JavaScript for the slideshow
+        const slides = document.querySelector('.slides');
+        const slideItems = document.querySelectorAll('.slide');
+        let currentIndex = 0;
+
+        function showSlide(index) {
+            slides.style.transform = `translateX(${-index * 100}%)`;
+        }
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % slideItems.length;
+            showSlide(currentIndex);
+        }
+
+        setInterval(nextSlide, 10000); // Change slide every 5 seconds (adjust as needed)
+    </script>
+
+<!-- style to make the images longer at the bottom -->
+<style>
+    img {
+        margin-bottom: 40px; /* Adjust as needed */
+    }
+</style>
+
+</body>
+</html>
