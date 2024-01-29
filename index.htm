@@ -371,13 +371,11 @@
 
     .slides {
         display: flex;
-        justify-content: center; /* Center the slides horizontally */
         transition: transform 1s ease-in-out
     }
 
   .slide {
-        flex: 0 0 auto; /* Prevent slides from shrinking */
-        width: 100%; /* Ensure slides take full width */
+        min-width: 100%; /* Ensure slides take full width */
     }
 </style>
 
