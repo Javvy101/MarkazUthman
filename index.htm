@@ -357,8 +357,8 @@
 <style>
     /* Slideshow styles */
     #slideshow {
-    max-width: 95%;
-    margin: 20px auto;
+    max-width: 850px;
+    margin: 0 auto;
     overflow: hidden;
     position: relative;
     margin-top: 20px;
@@ -372,9 +372,7 @@
     .slides {
         display: flex;
         justify-content: center; /* Center the slides horizontally */
-        transition: transform 0.5s ease-in-out;
-        -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
-        margin-right: 20px; /* Add margin on the right side */
+        transition: transform 1s ease-in-out
     }
 
   .slide {
@@ -382,46 +380,6 @@
         width: 100%; /* Ensure slides take full width */
     }
 </style>
-
-<!-- Add buttons for controlling the slideshow -->
-<div id="slideshow">
-    <div class="slides">
-        <div class="slide">
-            <img src="slide1.jpg" alt="Slide 1">
-        </div>
-        <div class="slide">
-            <img src="slide2.jpg" alt="Slide 2">
-        </div>
-        <!-- Add more slides as needed -->
-    </div>
-    <!-- Add buttons -->
-    <button id="prevButton">Previous</button>
-    <button id="nextButton">Next</button>
-</div>
-
-<script>
-    const slides = document.querySelector('.slides');
-    const slideItems = document.querySelectorAll('.slide');
-    let currentIndex = 0;
-
-    function showSlide(index) {
-        slides.style.transform = `translateX(${-index * 100}%)`;
-    }
-
-    function nextSlide() {
-        currentIndex = (currentIndex + 1) % slideItems.length;
-        showSlide(currentIndex);
-    }
-
-    function prevSlide() {
-        currentIndex = (currentIndex - 1 + slideItems.length) % slideItems.length;
-        showSlide(currentIndex);
-    }
-
-    // Add event listeners to buttons
-    document.getElementById('prevButton').addEventListener('click', prevSlide);
-    document.getElementById('nextButton').addEventListener('click', nextSlide);
-</script>
 
 
 
