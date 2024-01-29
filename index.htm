@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Markaz Uthman bin Affan | المركز عثمان بن عفان</title>
@@ -19,11 +17,12 @@
             color: #fff;
             text-align: center;
             padding: 1em;
+            width: 100%; /* Set header width to 100% */
         }
-		
-		nav a {
-    color: #FFD100; /* Yellow */
-}
+
+        nav a {
+            color: #FFD100; /* Yellow */
+        }
 
         nav {
             background-color: #000; /* Black */
@@ -52,7 +51,7 @@
             left: 0;
             background-color: #000; /* Black */
         }
-		
+
         nav ul li:hover > ul {
             display: inherit;
         }
@@ -74,12 +73,12 @@
 
         /* Slideshow styles */
         #slideshow {
-            max-width: 850px;
+            max-width: 100%; /* Set max-width to 100% */
             margin: 0 auto;
             overflow: hidden;
             position: relative;
             margin-top: 20px;
-			margin-right: 20px;
+            margin-right: 20px;
         }
 
         .slides {
@@ -90,7 +89,7 @@
         .slide {
             min-width: 100%;
         }
-
+		
         /* Prayer times table styles */
         #prayer-times {
             max-width: 50%;
@@ -113,7 +112,7 @@
             color: #fff;
         }
 
-        /* Knowledge section styles */
+       /* Knowledge section styles */
         #knowledge {
             padding: 20px;
         }
@@ -129,6 +128,13 @@
             border: 1px solid #ddd;
             text-decoration: none;
         }
+		
+		/* Make images longer at the bottom */
+        img {
+            margin-bottom: 40px; /* Adjust as needed */
+        }
+   
+
     </style>
 </head>
 <body>
@@ -136,18 +142,12 @@
    <!-- Add this HTML code in the header section -->
 <header>
     <!-- Add transparent palm tree image on the extreme left -->
-  <img src="PalmRev.png" alt="Left Palm Tree" style="position: absolute; top: 0; left: 0; width: 100%; max-width: 340px; height: auto;">
-
+    <img src="PalmRev.png" alt="Left Palm Tree" style="position: absolute; top: 0; left: 0; width: 100%; max-width: 340px; height: auto;">
     <h1>Markaz Uthman bin Affan | المركز عثمان بن عفان</h1>
-    
     <!-- Add transparent palm tree image on the extreme right -->
    <img src="MasjidLogo.png" alt="Right Palm Tree" style="position: absolute; top: 0; right: 0; width: 100%; max-width: 300px; height: auto;">
-
-
     <p>Upon the 'Aqeedah and Manhaj of the Salaf-us-Salih</p>
 </header>
-
-<!-- Rest of existing code -->
 
 
 
@@ -353,6 +353,32 @@
         margin-bottom: 40px; /* Adjust as needed */
     }
 </style>
+
+<style>
+    /* Slideshow styles */
+    #slideshow {
+    max-width: 850px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    margin-top: 20px;
+    margin-right: 50px; /* Adjust this value to move the slideshow more to the right */
+}
+
+}
+
+    }
+
+    .slides {
+        display: flex;
+        transition: transform 1s ease-in-out;
+    }
+
+    .slide {
+        min-width: 100%;
+    }
+</style>
+
 
 </body>
 </html>
