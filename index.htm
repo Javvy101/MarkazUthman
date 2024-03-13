@@ -9,7 +9,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #ffffff; /*White*/
         }
 
 	header {
@@ -18,20 +18,32 @@
             color: #FFD100;
             padding: 1em;
             width: 100%;
+	    display: flex;
+	    justify-content: space-between;
+	    align-items: center;
+		
         }
 
-        h1 {
-            text-align: left; /* Align text to the left */
-            margin-left: 10; /* Add margin to the left */
-	    color: #FFD100;
+	 
+h1 {
+            margin: 0;
+            color: #ffffff; /* White */
         }
 		
 		
 		p {
-            text-align: left; /* Align text to the left */
-            margin-left: 50px; /* Add margin to the left */
-	    color: ##000000;
+            margin: 0 0 0 50px;
+            color: #000000; /* Black */
         }
+
+	   header img {
+            position: absolute;
+            top: 50%;
+            right: 1em;
+            transform: translateY(-50%);
+            width: 150px; /* Adjust width as needed */
+            height: auto;
+        } 
 
 
         nav a {
@@ -160,6 +172,7 @@
     <!-- Add transparent palm tree image on the extreme left --
     /*<img src="PalmRev.png" alt="Left Palm Tree" style="position: absolute; top: 0; left: 0; width: 100%; max-width: 200px; height: auto;"> -->
     <h1>Markaz Uthman bin Affan | المركز عثمان بن عفان</h1>
+    <img src="MarkazLogo.jpg" alt="Header Image">
     <!-- Add transparent palm tree image on the extreme right -->
    <img src="MasjidPalm.png" alt="Right Palm Tree" style="position: absolute; top: 0; right: 0; width: 100%; max-width: 150px; height: auto;">
     <p>Upon the 'Aqeedah and Manhaj of the Salaf-us-Salih</p>
